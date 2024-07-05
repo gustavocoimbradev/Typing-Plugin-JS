@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body * {
+  font-family: "Montserrat", sans-serif;
+  color: #303a47;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  background: transparent;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(100% - 30px);
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 13px 30px;
+  background: #3f1edf;
+  color: #FFF;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+button:hover {
+  background: #391bc9;
+}
+
+code {
+  background: #f8f9fb;
+  display: block;
+  padding: 20px 30px;
+  margin: 20px 0;
+  line-height: 140%;
+  white-space: wrap;
+  word-break: break-all;
+}
+code b {
+  font-weight: 500;
+}
+code a.link {
+  color: #3f1edf;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+header h1 span {
+  color: #3f1edf;
+}
+header h2 {
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h3 {
+  margin: 0 0 30px;
+  font-weight: 500;
+}
+main section {
+  margin: 0 0 60px;
+}
+main section h2 {
+  font-weight: 500;
+  margin: 0 0 20px;
+  border-bottom: solid 2px #3f1edf;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  color: #3f1edf;
+}
+
+footer {
+  margin: 30px 0 0;
+  background: #fafafa;
+  padding: 60px 0;
+}
+footer h4 {
+  font-weight: 500;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0 0;
+}
+footer .links a {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
