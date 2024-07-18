@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Plugin JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css">    <link rel="stylesheet" href="./dist/css/accessibility.plugin.css">
     <link rel="stylesheet" href="./dist/css/typing.plugin.css">
     <link rel="stylesheet" href="./dist/css/index.css">
 </head>
@@ -22,47 +23,39 @@
 
             <section>
                 <h3>Quick start</h3>
-                <code>
-                    <a href="./plugin/typing.plugin.zip" style="text-decoration: underline; color: #3f1edf">Download plugin files</a> and import the .css and .js files in your project
-                </code>
+                <a href="./plugin/typing.plugin.zip">Download plugin files</a> and import the .css and .js files in your project
             </section>
 
             <section>
-                <h3>Basic usage</h4>
+                <h3>Basic usage</h3>
                 <span>This code will create a box with a text using the typewriter effect. Feel free to customize it, but keep the class .typing-js</span>
-                <code>
-                    &lt;div class="typing-js"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span typing-text="Hello, I'm typing this text"&gt;&lt;/span&gt;<br/>
-                    &lt;/div&gt;
-                </code>
+                <div class="code-block">
+                    <pre><code class="language-html">&lt;div class="typing-js"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span typing-text="Hello, I'm typing this text"&gt;&lt;/span&gt;<br/>
+    &lt;button class="js-decrease decrease"&gt;a-&lt;/button&gt;
+&lt;/div&gt;</pre>
+                </div>
             </section>
 
             <section>
-                <h3>Additional attributes</h4>
+                <h3>Additional attributes</h3>
                 <span>There's some features you can control. To do it, just add the attributes below in the same tag you are using the classe .typing-js</span>
-                <code>
-                    <ul>
-                        <li><b>typing-time</b> - writing time (ms) per letter typed (default: 40)</li>
-                        <li><b>sleeping-time</b> - interval time (ms) between the last character typed and the begining of the erasing (default: 2000)</li>
-                        <li><b>deleting-time</b> - erasing time (ms) per letter erased (default: 25)</li>
-                        <li><b>interval-time</b> - interval time (ms) between the texts typed (default: 250)</li>
-                        <li><b>typing-loop</b> - boolean value (1/0) to turn on or turn off the looping functionality (default: 1)</li>
-                    </ul>
-                </code>
+                <div class="code-block">
+                    <pre><code class="text"><ul><li><b>typing-time</b> - writing time (ms) per letter typed (default: 40)</li>
+<li><b>sleeping-time</b> - interval time (ms) between the last character typed and the begining of the erasing (default: 2000)</li>
+<li><b>deleting-time</b> - erasing time (ms) per letter erased (default: 25)</li>
+<li><b>interval-time</b> - interval time (ms) between the texts typed (default: 250)</li>
+<li><b>typing-loop</b> - boolean value (1/0) to turn on or turn off the looping functionality (default: 1)</li></ul></code></pre>
+                </div>
             </section>
-
+            
             <section>
                 <h3>See it in action</h4>
-
-                <code>
-                    <div class="typing-js" typing-time="40" sleeping-time="1450" deleting-time="25" interval-time="1000" typing-loop="1">
-                        <span typing-text="Hello, I'm typing this text"></span>
-                        <span typing-text="Wow, that's nice!"></span>
-                        <span typing-text="Ok, I'm bored now. Bye..."></span>
-                    </div>
-                </code>
-                
-
+                <div class="typing-js example" typing-time="40" sleeping-time="1450" deleting-time="25" interval-time="1000" typing-loop="1">
+                    <span typing-text="Hello, I'm typing this text"></span>
+                    <span typing-text="Wow, that's nice!"></span>
+                    <span typing-text="Ok, I'm bored now. Bye..."></span>
+                </div>
             </section>
 
 
@@ -81,6 +74,8 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./dist/js/index.js"></script>
     <script src="./dist/js/typing.plugin.js"></script>
 </body>
 </html>

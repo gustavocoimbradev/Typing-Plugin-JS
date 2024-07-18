@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body * {
-  font-family: "Montserrat", sans-serif;
-  color: #303a47;
+  font-family: "Verdana", sans-serif;
+  color: rgb(230, 230, 230);
+  background: #070713;
+}
+
+html {
+  background: #070713;
 }
 
 *,
@@ -42,18 +47,47 @@ button {
   cursor: pointer;
   font-size: 14px;
   padding: 13px 30px;
-  background: #3f1edf;
+  background: #204347;
   color: #FFF;
   border-radius: 4px;
   transition: all 0.3s;
   font-weight: 500;
 }
 button:hover {
-  background: #391bc9;
+  background: #275054;
 }
 
-code {
-  background: #f8f9fb;
+section a {
+  background: #204347;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 0 3px 0 0;
+  transition: all .3s;
+}
+
+section a:hover {
+  background: #275054;
+}
+
+.code-block pre code {
+  margin: 30px 0 0;
+  background: #24292d;
+  border-radius: 8px;
+}
+
+code.text {
+  line-height: 150%;
+}
+
+
+code span {
+  background: #24292d;
+  color: #E1E4E8;
+  line-height: 150%;
+}
+
+/* code {
+  background: #24292d;
   display: block;
   padding: 20px 30px;
   margin: 20px 0;
@@ -67,7 +101,7 @@ code b {
 code a.link {
   color: #3f1edf;
   text-decoration: underline;
-}
+} */
 
 header {
   display: flex;
@@ -82,7 +116,7 @@ header h1 {
   font-weight: 500;
 }
 header h1 span {
-  color: #3f1edf;
+  color: #60ddcd;
 }
 header h2 {
   font-weight: 500;
@@ -96,7 +130,7 @@ main {
 }
 main h3 {
   margin: 0 0 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 main section {
   margin: 0 0 60px;
@@ -104,15 +138,19 @@ main section {
 main section h2 {
   font-weight: 500;
   margin: 0 0 20px;
-  border-bottom: solid 2px #3f1edf;
+  border-bottom: solid 2px #204347;
   padding: 0 0 20px;
   margin: 0 0 20px;
-  color: #3f1edf;
+  color: #204347;
+}
+
+.example span {
+  padding: 14px;
+  border-radius: 8px;
 }
 
 footer {
   margin: 30px 0 0;
-  background: #fafafa;
   padding: 60px 0;
 }
 footer h4 {
