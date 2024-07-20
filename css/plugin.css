@@ -42,12 +42,12 @@
       opacity: 0;
     }
   }
-  .typing-js > *::after {
+  .typingjs-initialized > *::after {
     content: "_";
     position: relative;
     animation: blink 1.4s infinite;
   }
-  .typing-js > *:not(:first-of-type) {
+  .typingjs-initialized > *:not(:first-of-type) {
     display: none;
   }
   
