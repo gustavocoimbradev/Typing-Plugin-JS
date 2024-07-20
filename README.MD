@@ -18,6 +18,6 @@
  <li>Loop (typing and erasing infinitely)</li>
 </ol>
 
-<a href="https://typing.insider.blue/">
+<a href="https://typingjs.vercel.app/">
   <img src="https://img.shields.io/badge/Get%20started-blue" alt="Get started" height="30">
 </a>
