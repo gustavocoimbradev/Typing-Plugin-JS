@@ -34,7 +34,7 @@
 */
 
 
-const TypingJS = ({ 
+const typingjs = ({ 
     selector,
     typingTime = 40,
     sleepingTime = 2000,

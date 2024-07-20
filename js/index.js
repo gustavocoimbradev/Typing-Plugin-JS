@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     // Init TypingJS
-    TypingJS({
+    typingjs({
         selector: '.typing-js',
         typingTime: 40, // optional
         sleepingTime: 2000, // optional

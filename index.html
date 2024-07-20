@@ -45,14 +45,18 @@ code<!DOCTYPE html>
             </section>
 
             <section>
-                <h3>Additional attributes</h3>
-                <span>There's some features you can control. To do it, just add the attributes below in the same tag you are using the classe .typing-js</span>
+                <h3>Features</h3>
+                <span>There's some features you can control. To do it, just set the values when you're calling TypingJS()</span>
                 <div class="code-block">
-                    <pre><code class="text"><ul><li><b>typing-time</b> - writing time (ms) per letter typed (default: 40)</li>
-<li><b>sleeping-time</b> - interval time (ms) between the last character typed and the begining of the erasing (default: 2000)</li>
-<li><b>deleting-time</b> - erasing time (ms) per letter erased (default: 25)</li>
-<li><b>interval-time</b> - interval time (ms) between the texts typed (default: 250)</li>
-<li><b>typing-loop</b> - boolean value (1/0) to turn on or turn off the looping functionality (default: 1)</li></ul></code></pre>
+                    <pre><code class="language-typescript">&lt;script&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;typingjs({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selector: '.typing-js',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingTime: 40, // optional
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleepingTime: 2000, // optional
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deletingTime: 25, // optional
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingLoop: true, // optional
+&nbsp;&nbsp;&nbsp;&nbsp;})
+&lt;/script&gt;</code></pre>
                 </div>
             </section>
             
