@@ -1,4 +1,4 @@
-<h2>Typing Plugin JS</h2>
+<h2>TypingJS</h2>
 
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
