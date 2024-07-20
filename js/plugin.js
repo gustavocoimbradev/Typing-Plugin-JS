@@ -39,7 +39,8 @@ const typingjs = ({
     typingTime = 40,
     sleepingTime = 2000,
     deletingTime = 25,
-    typingLoop = true
+    typingLoop = true,
+    intervalTime = 0
 }) => {
     
     const typingElements = document.querySelectorAll(selector);
