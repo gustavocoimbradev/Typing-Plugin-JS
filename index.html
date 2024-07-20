@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypingJS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css">    <link rel="stylesheet" href="./dist/css/accessibility.plugin.css">
-    <link rel="stylesheet" href="./dist/css/typing.css">
-    <link rel="stylesheet" href="./dist/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css">    
+    <link rel="stylesheet" href="./css/plugin.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     
@@ -23,7 +23,15 @@
 
             <section>
                 <h3>Quick start</h3>
-                <a href="./plugin/typingjs.zip">Download plugin files</a> and import the .css and .js files in your project
+                <span>Insert the code below into the &lt;head&gt; of your project</span>
+                <div class="code-block">
+                    <pre><code class="language-html">&lt;link rel="stylesheet" href="https://typingjs.vercel.app/css/plugin.css"&gt;</code></pre>
+                </div>
+                <br/><br/>
+                <span>Insert the code below at the end of &lt;body&gt; of your project</span>
+                <div class="code-block">
+                    <pre><code class="language-html">&lt;script src="https://typingjs.vercel.app/js/plugin.js"&gt;</script></pre>
+                </div>
             </section>
 
             <section>
@@ -75,7 +83,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script src="./dist/js/index.js"></script>
-    <script src="./dist/js/typing.js"></script>
+    <script src="./js/plugin.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
