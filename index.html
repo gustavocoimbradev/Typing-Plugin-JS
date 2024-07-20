@@ -35,8 +35,8 @@ code<!DOCTYPE html>
             </section>
 
             <section>
-                <h3>Basic usage</h3>
-                <span>This code will create a box with a text using the typewriter effect. Feel free to customize it, but keep the class .typing-js</span>
+                <h3>HTML</h3>
+                <span>This code will create a box with a text using the typewriter effect. Feel free to add more spans inside of it, if you need to show more than one phrase per box.</span>
                 <div class="code-block">
                     <pre><code class="language-html">&lt;div class="typing-js"&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;span typing-text="Hello, I'm typing this text"&gt;&lt;/span&gt;<br/>
@@ -45,17 +45,19 @@ code<!DOCTYPE html>
             </section>
 
             <section>
-                <h3>Features</h3>
-                <span>There's some features you can control. To do it, just set the values when you're calling TypingJS()</span>
+                <h3>Javascript</h3>
+                <span>Use the javascript code bellow to init TypingJS. You can personalize the values to get another variation of time, speed and toggle the loop.</span>
                 <div class="code-block">
                     <pre><code class="language-typescript">&lt;script&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;typingjs({
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selector: '.typing-js',
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingTime: 40, // optional
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleepingTime: 2000, // optional
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deletingTime: 25, // optional
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingLoop: true, // optional
-&nbsp;&nbsp;&nbsp;&nbsp;})
+&nbsp;&nbsp;&nbsp;&nbsp;document.addEventListener('DOMContentLoaded', () => {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingjs({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selector: '.typing-js',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingTime: 40, // Interval between each character in milliseconds (ms)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleepingTime: 2000, // Interval between each phrase in milliseconds (ms)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deletingTime: 25, // Interval between deleting of each character in milliseconds (ms)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typingLoop: true, // Off: Keep the last phrase / On: After the last one, returns to the first
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})
+&nbsp;&nbsp;&nbsp;&nbsp;});
 &lt;/script&gt;</code></pre>
                 </div>
             </section>
